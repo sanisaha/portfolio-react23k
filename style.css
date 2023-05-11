@@ -72,7 +72,7 @@ nav div div li {
 }
 
 #banner {
-  background-image: url("https://images.unsplash.com/photo-1517825738774-7de9363ef735?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1710&q=80");
+  background-image: url("/assets/pictures/tiger.jpg");
   background-size: cover;
   background-position: center;
   padding: 10rem 0;
@@ -111,7 +111,7 @@ nav div div li {
   padding: 1rem 0;
 }
 .project-card a {
-  color: white;
+  color: rgb(255, 255, 243);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -137,6 +137,7 @@ nav div div li {
 }
 .skill-full-card {
   display: grid;
+  color: black;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 
@@ -144,7 +145,7 @@ nav div div li {
 }
 
 .skill-card {
-  background-color: rgb(230, 161, 24);
+  background-color: rgb(230, 161, 243);
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -166,7 +167,7 @@ progress::-webkit-progress-bar {
   background: rgb(242, 246, 243);
 }
 progress::-webkit-progress-value {
-  background: rgb(5, 232, 69);
+  background: rgb(5, 232, 243);
 }
 
 #footer {
@@ -201,8 +202,8 @@ form div {
 #form input[type="submit"] {
   padding: 5px 15px;
   border-radius: 5px;
-  color: whitesmoke;
-  background-color: rgb(119, 119, 30);
+  color: black;
+  background-color: yellowgreen;
 }
 #form h3 {
   text-align: center;
@@ -218,7 +219,7 @@ form div {
 .gallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-position: center;
 }
 .gallery-item-1 {
   grid-column-start: 1;
@@ -274,7 +275,7 @@ form div {
   grid-row-start: 9;
   grid-row-end: 12;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .content p {
     overflow: hidden;
     line-height: 2rem;
@@ -295,6 +296,7 @@ form div {
   #menu {
     display: none;
   }
+
   .skill-full-card {
     grid-template-columns: repeat(2, 1fr);
   }
